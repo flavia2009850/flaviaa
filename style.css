@@ -1,1 +1,83 @@
-st
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8a2be2; /* Roxo */
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.symbol img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.next-page-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6a1b9a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.next-page-link a:hover {
+    background-color: #9c27b0;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.left-image {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.left-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-text {
+    flex: 2;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .left-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
